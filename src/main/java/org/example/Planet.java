@@ -11,10 +11,10 @@ enum Planets {
     URANUS(7,2870, 25362, 0.72),
     NEPTUN(8,4500, 24622,0.62);
 
-    private int order;
-    private double distance;
-    private double radius;
-    private double rotationTime;
+    private final int order;
+    private final double distance;
+    private final double radius;
+    private final double rotationTime;
     Planets(int order, double distance, double radius, double rotationTime) {
         this.order = order;
         this.distance= distance;
@@ -33,4 +33,5 @@ enum Planets {
     public double getRotationTime(){
         return rotationTime;
     }
+
 }
